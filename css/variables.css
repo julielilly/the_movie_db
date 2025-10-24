@@ -8,4 +8,13 @@
     /* fonts */
     --font-header: serif;
     --font-body: sans-serif;
+
+    --image-max-width: 100%;
 }
+
+@media (width > 570px) {
+    :root {
+        --image-max-width: 180px;
+    }
+}
+

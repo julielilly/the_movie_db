@@ -12,10 +12,10 @@
         <h1>The Movie Database</h1>
         <nav>
             <ul>
-                <li><a href="#" class="active">Now Playing</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Top Rated</a></li>
-                <li><a href="#">Upcoming</a></li>
+                <li><a href="#" data-cat="now_playing" class="active">Now Playing</a></li>
+                <li><a href="#" data-cat="popular">Popular</a></li>
+                <li><a href="#" data-cat="top_rated">Top Rated</a></li>
+                <li><a href="#" data-cat="upcoming">Upcoming</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +31,7 @@
     <footer>&copy; Julie Lilly Gyldenløve</footer>
 </body>
 
-<!-- <template id="movie-template"> -->
+<template id="movie-template">
     <article>
         <header>
             <h2></h2>
@@ -40,11 +40,11 @@
             <img src="" alt="">
             <div>
                 <p class="description"></p>
-                <p>Original title: <span class="original_title"></span></p>
-                <p>Release date: <span class="release-date"></span></p>
+                <p><strong>Original title: </strong><span class="original_title"></span></p>
+                <p><strong>Release date: </strong><span class="release-date"></span></p>
             </div>
         </section>
     </article>
-<!-- </template> -->
+</template>
 
 </html>

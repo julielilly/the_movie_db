@@ -1,2 +1,5 @@
 node_modules
-.env
+eslint.config.mjs
+package-lock.json
+package.json
+config.js
