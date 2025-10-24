@@ -1,0 +1,11 @@
+:root {
+    /* colors */
+    --color-primary: #2E2019;
+    --color-secondary: darkred;
+    --color-article-primary: #301934;
+    --color-accent: #FFFF8A;
+
+    /* fonts */
+    --font-header: serif;
+    --font-body: sans-serif;
+}

@@ -1,0 +1,86 @@
+@import "variables.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    
+    > header, > footer {
+        background-color: var(--color-primary);
+        color: white;
+        width: 100%;
+        font-family: var(--font-header);
+    }
+
+    > header {
+        position: fixed;
+        top: 0;
+
+        h1 {
+            margin: 1.2rem 1rem;
+        }
+
+        nav {
+            background-color: var(--color-secondary);
+            padding: .5rem 1rem;
+            font-family: var(--font-body);
+
+            ul {
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: .9rem;
+
+                &:hover, &.active {
+                    color: var(--color-accent);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    main {
+        margin: 7.5rem 1rem 2rem 1rem;
+
+    }
+
+    > footer {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        padding-block: .2rem;
+    }
+}
+
+@media (width > 450px) {
+    body {
+        
+        > header {
+
+            nav {
+
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (width > 900px) {
+    body {
+        header h1, header ul, main > *, footer > * {
+            max-width: 800px;
+            margin-inline: auto;
+        }
+    }
+}
